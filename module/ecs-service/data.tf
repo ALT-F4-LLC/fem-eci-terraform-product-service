@@ -94,6 +94,6 @@ data "aws_iam_policy_document" "service_assume_role" {
 data "aws_lb_target_group" "this" {
   tags = {
     Cluster = var.cluster_name
-    Name    = "fem-eci-service-${var.environment}"
+    Name    = "${var.cluster_name}-${var.name}"
   }
 }
