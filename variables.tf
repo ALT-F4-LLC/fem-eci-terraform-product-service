@@ -5,3 +5,8 @@ variable "cluster_name" {
 variable "environment" {
   type = string
 }
+
+variable "registry" {
+  default = "<enter-your-registry>"
+  type    = string
+}
